@@ -8,3 +8,7 @@ class Displayable(object):
         # print the arguments
         if level <= self.max_display_level:
             print(*args, **nargs)
+
+    def visualize(func):
+        return func
+
